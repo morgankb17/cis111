@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pizza Calculator</title>
+    <link rel="stylesheet" href="pizzaCalc-view-v2.css" />
+  </head>
+
+  <body>
+    <div id="grid">
+      <div id="header">
+        <h1>
+          <img src="pizza.png" alt="Pizza Image" /
+          style="width:100px;height:62px">Party Pat's Pizza Calculator
+        </h1>
+      </div>
+
+      <div id="sidebar-left">
+        <h2>Select the Size</h2>
+        <p>
+          <input type="radio" name="size" value="small" /> Small (10")
+          <input type="radio" name="size" value="medium" /> Medium (12")
+          <input type="radio" name="size" value="large" /> Large (14")
+          <br />
+          <br />
+          <input type="radio" name="size" value="extra-large" /> Extra-Large
+          (16") <input type="radio" name="size" value="giant" /> Giant (18")
+        </p>
+        <hr />
+        <button>Submit Order</button>
+        <br /><br />
+        <div id="outputDiv">&nbsp;</div>
+        <br />
+      </div>
+
+      <div id="sidebar-right">
+        <h2>Select the Toppings</h2>
+
+        <p>
+          <input type="checkbox" value="Mushrooms" /> Mushrooms
+          <input type="checkbox" value="Olives" /> Olives
+          <input type="checkbox" value="Habaneros" /> Habaneros
+          <br />
+          <br />
+          <input type="checkbox" value="Pepperoni" /> Pepperoni
+          <input type="checkbox" value="Bacon" /> Bacon
+          <input type="checkbox" value="Peppers" /> Peppers
+        </p>
+      </div>
+    </div>
+    <script src="pizzaCalc-controller-v2.js"></script>
+  </body>
+</html>

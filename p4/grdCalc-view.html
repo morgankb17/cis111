@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="grdCalc-view.css" />
+  </head>
+
+  <body>
+    <div id="grid">
+      <div id="header">
+        <h1>CIS 111 Grade Calculator</h1>
+      </div>
+
+      <div id="sidebar-left">
+        <h3>Exams</h3>
+        <p>
+          Midterm:
+          <input id="mt" type="text" value="135" />
+        </p>
+        <p>
+          Final: &nbsp; &nbsp; &nbsp;
+          <input id="fnl" type="text" value="135" />
+        </p>
+        <hr />
+        <button>Calculate Grade</button>
+        <br /><br />
+        <div id="outputDiv">&nbsp;</div>
+        <br />
+      </div>
+
+      <div id="sidebar-right">
+        <h3>Projects</h3>
+        <p>P1: <input type="text" value="90" /></p>
+        <p>P2: <input type="text" value="90" /></p>
+        <p>P3: <input type="text" value="90" /></p>
+        <p>P4: <input type="text" value="90" /></p>
+        <p>P5: <input type="text" value="90" /></p>
+      </div>
+    </div>
+    <script src="grdCalc-controller.js"></script>
+  </body>
+</html>

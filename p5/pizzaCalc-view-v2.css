@@ -1,0 +1,68 @@
+body {
+  color: #ebf2fa; /* flash white */
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  border: thin solid yellow;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4cbb17; /* Kelly Green */
+}
+
+#header,
+#sidebar-left,
+#sidebar-right {
+  text-align: center;
+  border: thin solid yellow;
+}
+
+#header {
+  /* Start on Row 1 */
+  grid-row: 1;
+  /* Start on the first column line and extend all the to the last column line */
+  grid-column: 1 / 3;
+}
+
+#sidebar-left {
+  /* Start on Row 2 */
+  grid-row: 2;
+  /* Start on the first column line and stop at the next column line */
+  grid-column: 1 / 2;
+}
+
+#sidebar-right {
+  /* Start on Row 2 */
+  grid-row: 2;
+  /* Start on the third column line and stop at the last column line */
+  grid-column: 2 / 3;
+}
+
+input[type="text"] {
+  text-align: center;
+  border: thin solid green;
+  border-radius: 7px;
+}
+
+button {
+  font-size: 20px;
+  background-color: green;
+  border: thin solid yellow;
+  color: yellow;
+  border-radius: 7px;
+  margin-top: 2em;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: yellow;
+}
+
+#outputDiv {
+  color: yellow;
+}
